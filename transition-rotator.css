@@ -1,0 +1,21 @@
+[data-position] {
+    transition: visibility .3s, opacity .3s, transform .3s;
+}
+
+[data-position="active"] {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+[data-position="next"] {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(50%, 0);
+}
+
+[data-position="previous"] {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 0);
+}
