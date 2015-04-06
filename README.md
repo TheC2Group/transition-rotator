@@ -6,6 +6,7 @@ This just relies on CSS for any transition between items. Every item will be abl
 Browsers that don't support CSS transitions still see the end result. [caniuse](http://caniuse.com/#feat=css-transitions)
 
 ES5 polyfills needed for:
+
 * Array.isArray
 * Array.forEach
 * Array.map
