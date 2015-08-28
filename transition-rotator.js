@@ -1,10 +1,9 @@
-/*  transition-rotator
- *  version: 1.0.0
- *  https://stash.c2mpg.com:8443/projects/C2/repos/transition-rotator
- *  @preserve
+/*!
+ * Transition Rotator
+ * https://stash.c2mpg.com:8443/projects/C2/repos/transition-rotator
+ * @version 1.1.0
+ * @license MIT (c) The C2 Group (c2experience.com)
  */
-
-/* exported TransitionRotator */
 
 var TransitionRotator = (function () {
     'use strict';
@@ -87,3 +86,8 @@ var TransitionRotator = (function () {
 
     return Rotator;
 }());
+
+// export commonjs
+if (typeof module !== 'undefined' && ('exports' in module)) {
+    module.exports = TransitionRotator;
+}

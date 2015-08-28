@@ -1,0 +1,15 @@
+{
+  "name": "transition-rotator",
+  "version": "1.1.0",
+  "description": "This just relies on CSS for any transition between items.",
+  "main": "transition-rotator.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@stash.c2mpg.com:7999/c2/transition-rotator.git"
+  },
+  "keywords": [
+    "slideshow"
+  ],
+  "author": "The C2 Group",
+  "license": "MIT"
+}

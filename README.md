@@ -1,9 +1,9 @@
 transition-rotator
 ==================
 
-This just relies on CSS for any transition between items. Every item will be able to be identified in CSS as next, previous or active.
+> This just relies on CSS for any transition between items. Every item will be able to be identified in CSS as next, previous or active.
 
-Browsers that don't support CSS transitions still see the end result. [caniuse](http://caniuse.com/#feat=css-transitions)
+*Browsers that don't support CSS transitions still see the end result.* [caniuse](http://caniuse.com/#feat=css-transitions)
 
 ES5 polyfills needed for:
 
@@ -12,7 +12,26 @@ ES5 polyfills needed for:
 * Array.map
 * Object.keys
 
-Dependencies: none
+
+To get started
+--------------
+
+### CommonJS
+
+```
+$ get clone ssh://git@stash.c2mpg.com:7999/c2/transition-rotator.git
+```
+
+```js
+var TransitionRotator = require('./transition-rotator');
+```
+
+### Browser Global
+
+```html
+<script src="transition-rotator.js"></script>
+```
+
 
 Create a TransitionRotator
 --------------------------
@@ -31,9 +50,16 @@ var options = {
 var rotator = new TransitionRotator(arrayOfItems, options);
 ```
 
+
 Change the active index
 -----------------------
 
 ```js
 rotator.activate(0);
 ```
+
+
+License
+-------
+
+MIT © [The C2 Group](https://c2experience.com)
