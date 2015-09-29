@@ -19,11 +19,11 @@ To get started
 ### CommonJS
 
 ```
-$ get clone ssh://git@stash.c2mpg.com:7999/c2/transition-rotator.git
+$ npm install transition-rotator
 ```
 
 ```js
-var TransitionRotator = require('./transition-rotator');
+var TransitionRotator = require('transition-rotator');
 ```
 
 ### Browser Global
