@@ -1,6 +1,6 @@
 /*!
  * Transition Rotator
- * https://stash.c2mpg.com:8443/projects/C2/repos/transition-rotator
+ * https://github.com/TheC2Group/transition-rotator
  * @version 1.1.0
  * @license MIT (c) The C2 Group (c2experience.com)
  */

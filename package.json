@@ -5,7 +5,7 @@
   "main": "transition-rotator.js",
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.c2mpg.com:7999/c2/transition-rotator.git"
+    "url": "git@github.com:TheC2Group/transition-rotator.git"
   },
   "keywords": [
     "slideshow"
