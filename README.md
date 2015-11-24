@@ -29,7 +29,7 @@ var TransitionRotator = require('transition-rotator');
 ### Browser Global
 
 ```html
-<script src="transition-rotator.js"></script>
+<script src="iife/transition-rotator.js"></script>
 ```
 
 

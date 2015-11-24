@@ -1,8 +1,16 @@
 {
   "name": "transition-rotator",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This just relies on CSS for any transition between items.",
-  "main": "transition-rotator.js",
+  "jsnext:main": "transition-rotator.js",
+  "main": "cjs/transition-rotator.js",
+  "export": "TransitionRotator",
+  "scripts": {
+    "iife": "rollup -c rollup-iife.config.js",
+    "cjs": "rollup -c rollup-cjs.config.js",
+    "umd": "rollup -c rollup-umd.config.js",
+    "build": "npm run iife && npm run cjs && npm run umd"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:TheC2Group/transition-rotator.git"
@@ -11,5 +19,15 @@
     "slideshow"
   ],
   "author": "The C2 Group",
-  "license": "MIT"
+  "license": "MIT",
+  "copyright": "(c) The C2 Group (c2experience.com)",
+  "bugs": {
+    "url": "https://github.com/TheC2Group/transition-rotator/issues"
+  },
+  "homepage": "https://github.com/TheC2Group/transition-rotator",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.0.0",
+    "rollup": "^0.21.0",
+    "rollup-plugin-babel": "^2.1.0"
+  }
 }

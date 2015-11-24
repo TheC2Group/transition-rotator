@@ -1,5 +1,12 @@
 'use strict';
 
+var babelHelpers = {};
+
+babelHelpers.typeof = function (obj) {
+  return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj;
+};
+
+babelHelpers;
 var defaults = {
     next: 'next',
     previous: 'previous',
@@ -21,7 +28,7 @@ Item.prototype.setPosition = function (position) {
 };
 
 // context should be an instance of Rotator
-var getPosition = function (itemIndex) {
+var getPosition = function getPosition(itemIndex) {
     if (typeof this.activeIndex !== 'number') {
         return this.opts.next;
     }
@@ -35,7 +42,7 @@ var getPosition = function (itemIndex) {
 };
 
 // context should be an instance of Rotator
-var getInitialIndex = function () {
+var getInitialIndex = function getInitialIndex() {
     for (var x = 0, xlen = this.items.length; x < xlen; x += 1) {
         if (this.items[x].position === this.opts.active) return x;
     }
@@ -49,9 +56,9 @@ function Rotator(set, options) {
     }
 
     this.opts = {};
-    if (typeof options === 'object') {
+    if ((typeof options === 'undefined' ? 'undefined' : babelHelpers.typeof(options)) === 'object') {
         Object.keys(defaults).forEach(function (key) {
-            this.opts[key] = (typeof options[key] === 'undefined') ? defaults[key] : options[key];
+            this.opts[key] = typeof options[key] === 'undefined' ? defaults[key] : options[key];
         }, this);
     } else {
         Object.keys(defaults).forEach(function (key) {
@@ -76,4 +83,4 @@ Rotator.prototype.activate = function (index) {
     }, this);
 };
 
-export default Rotator;
+module.exports = Rotator;
