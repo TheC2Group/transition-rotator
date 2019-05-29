@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+.Wrap {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.Items {
+    position: relative;
+    margin: 0;
+    list-style: none;
+    padding: 0 0 56.25%;
+    width: 100%;
+    overflow: hidden;
+}
+.Items li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+[data-status="enabled"] li {
+    display: block;
+}
+.Items img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+[data-custom-position] {
+    transition: visibility 1s, transform 1s;
+}
+
+[data-custom-position="custom-active"] {
+    visibility: visible;
+    transform: translate(0, 0);
+}
+
+[data-custom-position="custom-next"] {
+    visibility: hidden;
+    transform: translate(100%, 0);
+}
+
+[data-custom-position="custom-previous"] {
+    visibility: hidden;
+    transform: translate(-100%, 0);
+}
+
+[data-pos] {
+    transition: visibility .5s, opacity .5s, transform .5s;
+}
+
+[data-pos="active"] {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+[data-pos="infront"] {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1.5);
+}
+
+[data-pos="behind"] {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.5);
+}
