@@ -1,15 +1,12 @@
 {
   "name": "transition-rotator",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "This just relies on CSS for any transition between items.",
   "jsnext:main": "transition-rotator.js",
   "main": "cjs/transition-rotator.js",
   "export": "TransitionRotator",
   "scripts": {
-    "iife": "rollup -c rollup-iife.config.js",
-    "cjs": "rollup -c rollup-cjs.config.js",
-    "umd": "rollup -c rollup-umd.config.js",
-    "build": "npm run iife && npm run cjs && npm run umd",
+    "build": "rollup -c rollup.config.js",
     "bundle-example": "browserify example/js/index.js -o example/bundle/index.js"
   },
   "repository": {

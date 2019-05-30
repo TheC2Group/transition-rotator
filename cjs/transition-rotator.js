@@ -1,3 +1,9 @@
+/*!
+ * transition-rotator
+ * https://github.com/TheC2Group/transition-rotator
+ * @version 1.3.1
+ * @license MIT (c) The C2 Group (c2experience.com)
+ */
 'use strict';
 
 var defaults = {
